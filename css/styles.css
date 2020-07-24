@@ -121,13 +121,11 @@ section {
     color: #fff;
 }
 
-
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
 .landing__container {
     padding: 1em;
     text-align: left;
-    scroll-margin-top: 50px;
 }
 
 @media only screen and (min-width: 35em){
@@ -135,6 +133,10 @@ section {
         max-width: 50em;
         padding: 4em;
     }
+}
+
+section {
+    scroll-margin-top: 50px;
 }
 
 section:nth-of-type(even) .landing__container {

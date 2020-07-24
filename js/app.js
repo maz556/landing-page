@@ -40,7 +40,7 @@ function build_nav() {
 function set_actives() {
     for (var [nav, sect] of nav_sect) {
         const rect = sect.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        if (rect.top <= 51 && rect.bottom > 51) {
             nav.classList.add("your-active-class");
             sect.classList.add("your-active-class");
         } else {
